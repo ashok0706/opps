@@ -1,0 +1,50 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+    public  static class influencers{
+        String name;
+        int post;
+        int reels;
+        String blue_tick;
+        int followers;
+        int following;
+        String category;
+        char gender;
+        
+        public influencers(String n, int p, int r, String bt, int fr, int f, String c, char g){
+            name=n;
+            post=p;
+            reels=r;
+            blue_tick=bt;
+            followers=fr;
+            following=f;
+            category =c;
+            gender =g;
+        }
+      
+        
+        void influencers_details(){
+           if(name.length()>0) System.out.println(name);
+            System.out.println(post);
+            System.out.println(reels);
+            System.out.println(blue_tick);
+            System.out.println(followers);
+            System.out.println(following);
+            System.out.println(category);
+            System.out.println(gender);
+        }
+    }
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        
+        influencers rafthar = new influencers("",340, 400, "Yes", 7, 200, "Rapper", 'M');
+        influencers NikhilChinnapa = new influencers("Nikhil Chinapa", 500, 220, "Yes", 5, 210, "VJ", 'M');
+        influencers Baseerbob = new influencers("Baseer", 500, 120, "No", 2, 230, "VJ", 'M');
+        
+        rafthar.influencers_details();
+        NikhilChinnapa.influencers_details();
+        Baseerbob.influencers_details();
+    }
+}

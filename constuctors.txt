@@ -1,0 +1,44 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+    public static class movie{
+        
+        int rating;
+        int collections;
+        int profit;
+        String actor;
+        String actress;
+        
+        public movie(int r, int c, int p, String a, String as){
+            rating=r;
+            collections=c;
+            profit=p;
+            actor=a;
+            actress=as;
+        }
+        
+        void movieDetails(){
+            System.out.println(rating);
+            System.out.println(collections);
+            System.out.println(profit);
+            System.out.println(actor);
+            System.out.println(actress);
+            
+        }
+    }
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        
+        movie m1= new movie(8, 200000, 5000,"John", "Disha");
+        movie m2 = new movie(9, 500000, 8000, "Akshay", "Anushka");
+        movie m3= new movie(10, 700000, 6000, "Ajay", "Deepika");
+        // movie m4 = new movie(9, 700000, 9000, "Jack", "Alia");
+        
+        m1.movieDetails();
+        m2.movieDetails();
+        m3.movieDetails();
+        // m4.movieDetails();
+    }
+}

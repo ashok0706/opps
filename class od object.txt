@@ -1,0 +1,51 @@
+import java.io.*;
+import java.util.*;
+
+
+public class Solution {
+
+    public static class Batman{
+    int rating ;
+    int MoneyCollection ;
+    int profit;
+    String Actor;
+    String Actress;
+    
+     void BatmanDetails(){
+         System.out.println(rating);
+         System.out.println(MoneyCollection);
+         System.out.println(profit);
+         System.out.println(Actor);
+         System.out.println(Actress);
+     }
+}
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        
+        Batman b1= new Batman();
+        b1.rating=8;
+        b1.MoneyCollection=200000;
+        b1.profit=5000;
+        b1.Actor = "John";
+        b1.Actress= "Disha";
+        
+         Batman b2= new Batman();
+        b2.rating=9;
+        b2.MoneyCollection=500000;
+        b2.profit=8000;
+        b2.Actor = "Akshay";
+        b2.Actress= "Anushka";
+        
+         Batman b3= new Batman();
+        b3.rating=10;
+        b3.MoneyCollection=700000;
+        b3.profit=6000;
+        b3.Actor = "Ajay";
+        b3.Actress= "Deepika";
+        
+        b1.BatmanDetails();
+        b2.BatmanDetails();
+        b3.BatmanDetails();
+        
+    }
+}
